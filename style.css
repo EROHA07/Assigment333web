@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.page {
+    width: 90%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* TASK 0 */
+
+.responsive-title {
+    font-size: 24px;
+}
+
+.responsive-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* TASK 1 */
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    width: calc(33.33% - 14px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+    .responsive-title {
+        font-size: 32px;
+    }
+
+    .responsive-text {
+        font-size: 18px;
+    }
+
+    .box {
+        width: calc(50% - 10px);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+    .responsive-title {
+        font-size: 24px;
+    }
+
+    .responsive-text {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 993px) {
+
+    .responsive-title {
+        font-size: 42px;
+    }
+
+    .responsive-text {
+        font-size: 20px;
+    }
+}
+
+/* ========================= */
+/* TASK 4 - PORTFOLIO */
+/* ========================= */
+
+.portfolio-header {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    font-size: 42px;
+}
+
+.card {
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.sidebar {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* PORTFOLIO TABLET */
+
+@media (max-width: 992px) {
+
+    .portfolio-header h1 {
+        font-size: 34px;
+    }
+
+    .sidebar {
+        margin-top: 30px;
+    }
+}
+
+
+/* PORTFOLIO MOBILE */
+
+@media (max-width: 576px) {
+
+    .portfolio-header {
+        padding: 35px 10px;
+    }
+
+    .portfolio-header h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-header p {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        margin-top: 25px;
+    }
+}
